@@ -17,6 +17,13 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.418), rgba(255, 255, 255, 0)), url('https://www.azpetshop.com.br/blog/wp-content/uploads/2020/06/adotar-gato-805x452.jpeg');
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position-y: 100%;
     object-fit: fill;
     display: block;
+}
+
+@media (max-width: 1079px) {
+    .part2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.418), rgba(255, 255, 255, 0)), url('https://i.imgur.com/3RoQdSv_d.webp?maxwidth=760&fidelity=grand') !important;
+    }
 }
