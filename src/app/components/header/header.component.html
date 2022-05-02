@@ -1,0 +1,41 @@
+<div class="header">
+    <div class="container">
+        <!-- <a href="#default" class="logo">PRANA PET</a> -->
+        <img src="/assets/images/log2.png" style="height: 58px; margin-top: -2px;" [routerLink]="['/']">
+        <div class="header-right pc">
+            <a [routerLink]="['/home']" routerLinkActive="active">Início</a>
+            <a [routerLink]="['/sobre']" routerLinkActive="active">Sobre</a>
+            <a [routerLink]="['/doacao']" routerLinkActive="active">Doações</a>
+        </div>
+        <div class="header-right mobile">
+            <ion-icon style="color: white; font-size: 32px; margin-top: 8px;" name="menu-outline" (click)="toggleSide()"></ion-icon>
+        </div>
+    </div>
+</div>
+
+<!-- Barra Lateral -->
+<div>
+    <div class="backDrop" *ngIf="sideBarV == true" (click)="closeSide()"></div>
+    <div class="sideBar" id="sideBar">
+
+        <div style="height: calc(100% - 160px);">
+
+            <div class="itemSide" style="margin-top: 8px;" [routerLink]="['/']">
+                <ion-icon name="home-outline"></ion-icon>
+                <span class="itemText">Início</span>
+            </div>
+
+            <div class="itemSide" [routerLink]="['/cursos']">
+                <ion-icon name="help-outline"></ion-icon>
+                <span class="itemText">Sobre</span>
+            </div>
+
+            <div class="itemSide" [routerLink]="['/ajuda']">
+                <ion-icon name="wallet-outline"></ion-icon>
+                <span class="itemText">Doações</span>
+            </div>
+
+        </div>
+
+    </div>
+</div>
